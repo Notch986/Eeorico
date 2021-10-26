@@ -1,9 +1,8 @@
 package ejercicio_5;
 
-public interface Queue<E> {
-	void enqueue(E x);
-	E dequeue();
-	E front();
-	E back();
-	boolean isEmpty();
+public interface Queue{
+	public Item peek();
+	public Item pop();
+	public void push(Item newPush);
+	public boolean isEmpty();
 }
